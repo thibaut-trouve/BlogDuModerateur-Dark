@@ -19,7 +19,10 @@
     }
 
 
-    header, .article-connexe, .no-more-post, .tag-top {
+    header,
+    .article-connexe,
+    .no-more-post,
+    .tag-top {
         border-bottom: 1px solid lightColor;
     }
 
