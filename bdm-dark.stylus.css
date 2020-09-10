@@ -1,0 +1,81 @@
+/* ==UserStyle==
+@name           BlogDuModérateur - Dark theme
+@namespace      https://github.com/thibaut-trouve
+@version        1.0.0
+@description    A dark theme for the news website: blogdumoderateur.com
+@homepageURL    https://github.com/thibaut-trouve/BlogDuModerateur-Dark/
+@updateURL      https://github.com/thibaut-trouve/BlogDuModerateur-Dark/blob/master/bdm-dark.user.css
+@supportURL     https://github.com/thibaut-trouve/BlogDuModerateur-Dark/issues
+@author         Thibaut Trouvé <thibaut.tek@gmail.com> (thibaut-trouve.com)
+@license        CC-BY-4.0
+@preprocessor stylus
+@var text darkColor "dark Color" rgb(53, 54, 58)
+@var text lightColor "light Color" #c6c6c6
+==/UserStyle== */
+@-moz-document domain("blogdumoderateur.com") {
+
+    .entry-content h2 {
+        font-size: 24px;
+    }
+
+
+    header, .article-connexe, .no-more-post, .tag-top {
+        border-bottom: 1px solid #c6c6c6;
+    }
+
+    .header {
+        border-bottom: none;
+    }
+
+    .header-scroll-article .header-social li {
+        background: #c6c6c6;
+        border: 1px solid #c6c6c6;
+    }
+
+    .card-newsletter .title,
+    .card-newsletter .inscription,
+    .single-post .newsletter-article,
+    .content-page .page-newsletter {
+        border: 1px solid #c6c6c6;
+        background: transparent;
+    }
+
+    .article-connexe h3.card-connexe {
+        background: #c6c6c6;
+    }
+
+    .header-scroll-article,
+    header,
+    .header,
+    .form_newsletter input[type="text"],
+    body > .content,
+    .article-connexe,
+    .no-more-post,
+    .tag-top,
+    footer {
+        background: rgb(53, 54, 58)
+    }
+
+    .entry-content p,
+    .entry-content h2,
+    .entry-content li,
+    a .breve,
+    .side h2,
+    .entry-header h1,
+    .entry-hat,
+    .header-category ul li a,
+    .single-post .newsletter-article .title,
+    .content-page .page-newsletter .title,
+    .header-scroll-article .titre-article,
+    #show-comments .publi-comments,
+    .card-newsletter .cgu_newsletter,
+    p.cgu_newsletter,
+    input[type="radio"].css-checkbox + label.css-radio,
+    .tag-top li a,
+    .tag-top h2,
+    .info-site .h5,
+    .info-site li a,
+    footer .newsletter .title-news {
+        color: #c6c6c6;
+    }
+}
