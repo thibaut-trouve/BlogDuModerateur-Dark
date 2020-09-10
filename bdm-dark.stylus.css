@@ -8,8 +8,8 @@
 @supportURL     https://github.com/thibaut-trouve/BlogDuModerateur-Dark/issues
 @author         Thibaut Trouvé <thibaut.tek@gmail.com> (thibaut-trouve.com)
 @license        CC-BY-4.0
-@preprocessor stylus
-@var text darkColor "dark Color" rgb(53, 54, 58)
+@preprocessor uso
+@var text darkColor "dark Color" #35363A
 @var text lightColor "light Color" #c6c6c6
 ==/UserStyle== */
   @-moz-document domain("blogdumoderateur.com") {
@@ -23,7 +23,7 @@
       .article-connexe,
       .no-more-post,
       .tag-top {
-          border-bottom: 1px solid #c6c6c6;
+          border-bottom: 1px solid /*[[lightColor]]*/;
       }
 
       .header {
@@ -31,20 +31,20 @@
       }
 
       .header-scroll-article .header-social li {
-          background: #c6c6c6;
-          border: 1px solid #c6c6c6;
+          background: /*[[lightColor]]*/;
+          border: 1px solid /*[[lightColor]]*/;
       }
 
       .card-newsletter .title,
       .card-newsletter .inscription,
       .single-post .newsletter-article,
       .content-page .page-newsletter {
-          border: 1px solid #c6c6c6;
+          border: 1px solid /*[[lightColor]]*/;
           background: transparent;
       }
 
       .article-connexe h3.card-connexe {
-          background: #c6c6c6;
+          background: /*[[lightColor]]*/;
       }
 
       .header-scroll-article,
@@ -56,7 +56,7 @@
       .no-more-post,
       .tag-top,
       footer {
-          background: rgb(53, 54, 58)
+          background: /*[[darkColor]]*/
       }
 
       .entry-content p,
@@ -79,6 +79,6 @@
       .info-site .h5,
       .info-site li a,
       footer .newsletter .title-news {
-          color: #c6c6c6;
+          color: /*[[lightColor]]*/;
       }
   }
